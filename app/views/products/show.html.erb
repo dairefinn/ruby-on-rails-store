@@ -1,5 +1,6 @@
 <% cache @product do %>
     <h1><%= @product.name %></h1>
+    <p><%= @product.try(:description) %></p>
 
     <%= link_to "Back", products_path %>
     <% if authenticated? %>
