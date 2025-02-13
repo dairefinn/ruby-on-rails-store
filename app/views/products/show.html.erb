@@ -9,3 +9,5 @@
         <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
     <% end %>
 <% end %>
+
+<%= render "inventory", product: @product %>
